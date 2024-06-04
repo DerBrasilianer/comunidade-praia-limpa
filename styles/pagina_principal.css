@@ -52,6 +52,12 @@ body {
     border-radius: 5rem;
 }
 
+.cabecalho__menu__imagem:hover {
+    height: 6.13rem;
+    width: 6.13rem;
+    border: 0.2rem solid var(--cor-quartenaria);
+}
+
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
     font-size: 2rem;
@@ -62,7 +68,7 @@ body {
 }
 
 .cabecalho__menu__link:hover {
-    color: var(--cor-hover);
+    color: var(--cor-quartenaria);
 }
 
 .apresentacao {
