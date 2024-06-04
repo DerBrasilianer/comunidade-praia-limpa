@@ -53,8 +53,8 @@ body {
 }
 
 .cabecalho__menu__imagem:hover {
-    height: 6.13rem;
-    width: 6.13rem;
+    height: 6.128rem;
+    width: 6.128rem;
     border: 0.2rem solid var(--cor-quartenaria);
 }
 
