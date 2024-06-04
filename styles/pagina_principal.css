@@ -90,7 +90,7 @@ body {
     margin: 15% 0% 0% 0%;
     padding: 1%;
     border-radius: 1rem;
-    border-left: 5px solid var(--cor-hover-2);
+    border-left: 0.7rem solid var(--cor-hover-2);
 }
 
 .apresentacao__conteudo__titulo {
