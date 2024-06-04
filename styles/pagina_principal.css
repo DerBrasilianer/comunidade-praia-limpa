@@ -163,6 +163,10 @@ body {
     width: 50%;
 }
 
+.apresentacao__valores {
+    text-align: left;
+}
+
 .rodape {
     padding: 15px;
     color: var(--cor-secundaria);
