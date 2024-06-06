@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+/* Usar o Google Fonts para encontrar diferentes tipos de fontes! */
+
+:root {
+    --cor-cabecalho: #2065be;
+    --cor-primaria: #0f1216;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+    --cor-quartenaria: #0fca37;
+    --cor-hover: #212429;
+    --cor-hover-2: #d4d4d4;
+    --cor-hover-3: #0d9b2b;
+    --cor-hover-4: #184a8b;
+    
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .cabecalho {
   background-color: #008CBA;
@@ -25,7 +47,7 @@
   color: #006699;
 }
 
-/* Apresentação */
+
 .apresentacao {
   padding: 20px;
 }
@@ -58,11 +80,43 @@
   background-color: #006699;
 }
 
-/* Rodapé */
 .rodape {
-  background-color: #006699;
-  color: white;
-  text-align: center;
-  padding: 10px;
+    padding: 15px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        /* Como no .cabecalho__menu já foi colocada a propriedade flexbox, não precisamos escrever novamente no @media */
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 1.2rem;
+    }
+
+    body {
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0% 0% 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
