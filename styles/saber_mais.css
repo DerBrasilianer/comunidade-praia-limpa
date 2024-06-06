@@ -33,7 +33,10 @@ body {
 .cabecalho {
     padding: 1.5% 0% 1.5% 5%;
     background-color: var(--cor-cabecalho);
+    
     background-image:url(/assets/Saber_mais_Background.png);
+    /* A utilização da mesma imagem de Background e Navegação foi proposital, eu achei bonito */
+
     background-size: 100%;
     background-repeat: no-repeat;
     border-bottom: solid var(--cor-quartenaria);
