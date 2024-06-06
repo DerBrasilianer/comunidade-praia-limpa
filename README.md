@@ -14,6 +14,5 @@ Ele visa a criação de uma rede social com o objetivo de limpar e preservar as 
 
 <h2>Citação</h2>
 
-"Preservar significa proteger a nós, o nosso mundo e o nosso Futuro." -AlphaSolvers
+"Preservar significa proteger a nós, o nosso mundo e o nosso Futuro." - AlphaSolvers
 
-"Nonsense. You're only saying that because no one ever has." - The Princess Bride (1987)
