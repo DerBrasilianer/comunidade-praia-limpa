@@ -193,6 +193,7 @@ a:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: var(--cor-primaria);
+    text-align: left;
 }
 
 .apresentacao__imagem {
