@@ -10,6 +10,7 @@
     --cor-hover: #212429;
     --cor-hover-2: #d4d4d4;
     --cor-hover-3: #0d9b2b;
+    --cor-hover-4: #184a8b;
     
     --fonte-principal: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -21,23 +22,24 @@
 }
 
 body {
-    background-image: url(/assets/Praia_Sendo_Limpa.png);
-    background-position-y: top;
-    background-repeat: no-repeat;
+    background-image: url(/assets/ongs_colaboradoras_Background2.png);
     background-position-y: top;
     background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--cor-secundaria);
     color: var(--cor-secundaria);
+    border-radius: 2rem;
 }
 
 .cabecalho {
     padding: 1.5% 0% 1.5% 5%;
     background-color: var(--cor-cabecalho);
-    background-image:url(/assets/COMUNIDADE_PRAIA_LIMPA__1_-removebg-preview_2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
     border-bottom: solid var(--cor-quartenaria);
     border-top: solid var(--cor-quartenaria);
+    background-image: url(/assets/ongs_colaboradoras_Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cabecalho__menu {
@@ -77,6 +79,7 @@ body {
     text-align: center;
     gap: 4rem;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .apresentacao__conteudo {
@@ -84,12 +87,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-secundaria);
     margin: 15% 0% 0% 0%;
     padding: 1%;
     border-radius: 1rem;
-    border-left: 0.7rem solid var(--cor-hover-2);
+    border: 3px solid var(--cor-quartenaria);
 }
 
 .apresentacao__conteudo__titulo {
@@ -98,13 +101,39 @@ body {
 }
 
 .titulo-destaque {
-    color: var(--cor-quartenaria);
+    color: var(--cor-cabecalho);
+    background-color: var(--cor-secundaria);
+    border: 3px solid var(--cor-quartenaria);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.titulo-destaque:hover {
+    color: var(--cor-hover-4);
+    background-color: var(--cor-hover-2);
+    border: 3px solid var(--cor-hover-3);
 }
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--cor-secundaria);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-cabecalho);
+}
+
+a:hover {
+    color: var(--cor-cabecalho);
+}
+
+.apresentacao__conteudo__integrante {
+    background-color: var(--cor-hover);
 }
 
 .apresentacao__links {
@@ -153,14 +182,23 @@ body {
     color: var(--cor-primaria);
     padding: 1%;
     margin-bottom: 1%;
-    border: 4px solid var(--cor-quartenaria);
     border-radius: 1rem;
     flex-direction: row;
     justify-content: space-between;
 }
 
+.apresentacao__corpo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
 .apresentacao__imagem {
     width: 50%;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 3rem;
 }
 
 .apresentacao__valores {
