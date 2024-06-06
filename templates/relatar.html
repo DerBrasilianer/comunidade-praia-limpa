@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Relatar</title>
-        <link rel="stylesheet" href="/styles/relatar.css"> <!--É essa linha que conecta a página HTML com o arquivo CSS-->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatar</title>
+    <link rel="stylesheet" href="/styles/relatar.css"> <!--É essa linha que conecta a página HTML com o arquivo CSS-->
+</head>
 
 
-    <body>
+<body>
 
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a href="/templates/pagina_principal.html"><img class="cabecalho__menu__imagem" src="/assets/COMUNIDADE_PRAIA_LIMPA__2_-removebg-preview_2.png"></a>
-                <a class="cabecalho__menu__link" href="/templates/integrantes.html">Integrantes</a>
-                <a class="cabecalho__menu__link" href="/templates/saber_mais.html">Saber Mais</a>
-                <a class="cabecalho__menu__link" href="/templates/ongs_colaboradoras.html">ONGs Colaboradoras</a>
-                <a class="cabecalho__menu__link" href="/templates/relatar.html">Relatar</a>
-            </nav>
-        </header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a href="/templates/pagina_principal.html"><img class="cabecalho__menu__imagem" src="/assets/COMUNIDADE_PRAIA_LIMPA__2_-removebg-preview_2.png"></a>
+            <a class="cabecalho__menu__link" href="/templates/integrantes.html">Integrantes</a>
+            <a class="cabecalho__menu__link" href="/templates/saber_mais.html">Saber Mais</a>
+            <a class="cabecalho__menu__link" href="/templates/ongs_colaboradoras.html">ONGs Colaboradoras</a>
+            <a class="cabecalho__menu__link" href="/templates/relatar.html">Relatar</a>
+        </nav>
+    </header>
 
 
-        <main class="apresentacao">
-            <h1>Relatar Poluição ou Lixo na Praia</h1>
-            <label for="imagem">Anexar Imagens:</label>
-            <input type="file" id="imagem" multiple>
+    <main class="apresentacao">
+        
+        <input type="file" id="imagem" multiple>
+        <br>
+        <form>
+            <label for="nome-praia">Nome da Praia:</label>
+            <input type="text" id="nome-praia">
             <br>
-            <form>
-                <label for="nome-praia">Nome da Praia:</label>
-                <input type="text" id="nome-praia">
-                <br>
-                <label for="estado">Estado da Praia:</label>
-                <input type="text" id="estado">
-                <br>
-                <label for="cidade">Cidade da Praia:</label>
-                <input type="text" id="cidade">
-                <br>
-                <label for="cep">CEP da Praia:</label>
-                <input type="text" id="cep">
-                <br>
-                <input type="submit" value="Enviar">
-            </form>
-        </main>
+            <label for="estado">Estado da Praia:</label>
+            <input type="text" id="estado">
+            <br>
+            <label for="cidade">Cidade da Praia:</label>
+            <input type="text" id="cidade">
+            <br>
+            <label for="cep">CEP da Praia:</label>
+            <input type="text" id="cep">
+            <h1>Relate problemas de poluição ou lixo na praia</h1>
+            <p><strong>Descrição do problema:</strong></p>
+            <textarea id="descricao-problema"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
 
 
-        <footer>
-            <p class="rodape">Desenvolvido pela AlphaSolvers</p>
-        </footer>
+    <footer>
+        <p class="rodape">Desenvolvido pela AlphaSolvers</p>
+    </footer>
 
-    </body>
+</body>
 
 </html>
 
