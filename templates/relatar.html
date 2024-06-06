@@ -25,24 +25,32 @@
 
     <main class="apresentacao">
         
-        <input type="file" id="imagem" multiple>
-        <br>
+        <h1 class="apresentacao__conteudo__titulo">Relate problemas de poluição ou lixo na praia</h1>
         <form>
-            <label for="nome-praia">Nome da Praia:</label>
+
+            <input type="file" id="imagem" multiple>
+            <br>
+
+            <label class="apresentacao__conteudo__texto" for="nome-praia"><strong>Nome da Praia:</strong></label>
             <input type="text" id="nome-praia">
             <br>
-            <label for="estado">Estado da Praia:</label>
+
+            <label class="apresentacao__conteudo__texto" for="estado"><strong>Estado da Praia:</strong></label>
             <input type="text" id="estado">
             <br>
-            <label for="cidade">Cidade da Praia:</label>
+
+            <label class="apresentacao__conteudo__texto" for="cidade"><strong>Cidade da Praia:</strong></label>
             <input type="text" id="cidade">
             <br>
-            <label for="cep">CEP da Praia:</label>
+
+            <label class="apresentacao__conteudo__texto" for="cep"><strong>CEP da Praia:</strong></label>
             <input type="text" id="cep">
-            <h1>Relate problemas de poluição ou lixo na praia</h1>
-            <p><strong>Descrição do problema:</strong></p>
-            <textarea id="descricao-problema"></textarea>
             <br>
+
+            <p class="apresentacao__conteudo__texto"><strong>Descrição do problema:</strong></p>
+            <textarea class="apresentacao__conteudo__descricao" id="descricao-problema"></textarea>
+            <br>
+
             <input type="submit" value="Enviar">
         </form>
 
