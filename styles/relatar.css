@@ -82,6 +82,32 @@ input {
     font-size: 1rem;
 }
 
+button {
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-secundaria);
+    margin-top: 1rem;
+}
+
+button.close {
+    top: 90%;
+    right: 90%;
+}
+
+dialog {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+}
+
 .apresentacao {
     display: flex;
     align-items: center;
@@ -166,6 +192,17 @@ a:hover {
 
 .apresentacao input[type="submit"]:hover {
   background-color: var(--cor-hover-4);
+}
+
+.close {
+    background-color: var(--cor-cabecalho);
+    color: var(--cor-secundaria);
+    width: 1.7rem;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: var(--cor-hover-4);
 }
 
 .rodape {
