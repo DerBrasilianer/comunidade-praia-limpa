@@ -49,6 +49,24 @@ body {
     gap: 80px;
 }
 
+.cabecalho__menu__botao {
+    height: 2rem;
+    width: 2rem;
+    background-image: url(/assets/Menu.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    background-color: var(--cor-cabecalho);
+    border-radius: 1rem;
+    border: 0.1rem solid var(--cor-quartenaria);
+    cursor: pointer;
+}
+
+.cabecalho__menu__botao:hover {
+    background-color: var(--cor-hover-4);
+    border: 0.1rem solid var(--cor-secundaria);
+}
+
 .cabecalho__menu__imagem {
     height: 6.5rem;
     width: 6.5rem;
@@ -68,6 +86,12 @@ body {
     color: var(--cor-secundaria);
     text-decoration: none;
     padding: 1% 0% 0% 0%;
+}
+
+.cabecalho__menu__imagem--escondido,
+.cabecalho__menu__link--escondido,
+.cabecalho__menu__link__login--escondido {
+  display: none;
 }
 
 .cabecalho__menu__link:hover {

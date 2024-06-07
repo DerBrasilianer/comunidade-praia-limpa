@@ -10,4 +10,4 @@ function toggleMenu() {
     botao.classList.toggle("cabecalho__menu__imagem--escondido");
     links.forEach((link) => link.classList.toggle("cabecalho__menu__link--escondido"));
     loginLink.classList.toggle("cabecalho__menu__link__login--escondido");
-}
+  }
