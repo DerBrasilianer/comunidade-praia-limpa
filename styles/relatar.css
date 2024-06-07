@@ -72,6 +72,24 @@ body {
     color: var(--cor-quartenaria);
 }
 
+.cabecalho__menu__link__login {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 2.5rem 1rem 0 1rem;
+    background-color: transparent;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 50px;
+    margin-left: 10rem;
+}
+
+.cabecalho__menu__link__login:hover {
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+}
+
 input#imagem {
     margin-bottom: 5%;
 }
