@@ -48,6 +48,18 @@ body {
 }
 
 .cabecalho__menu__botao {
+    display: block;
+}
+
+.cabecalho__menu__imagem {
+    display: block;
+}
+
+.home {
+    display: none;
+}
+
+.cabecalho__menu__botao {
     height: 2rem;
     width: 2rem;
     background-image: url(/assets/Menu.svg);
@@ -252,7 +264,7 @@ a:hover {
     font-weight: 400;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     /* Estilos para iPads */
 
     body {
@@ -346,6 +358,18 @@ a:hover {
 
     .cabecalho__menu {
         gap: 0.55rem;
+    }
+
+    .cabecalho__menu__botao {
+        display: none;
+    }
+
+    .cabecalho__menu__imagem {
+        display: none;
+    }
+
+    .home {
+        display: block;
     }
 
     .cabecalho__menu__link {
