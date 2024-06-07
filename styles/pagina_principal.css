@@ -98,11 +98,14 @@ body {
 }
 
 .titulo-destaque {
-    color: var(--cor-quartenaria);
+    color: var(--cor-hover-3);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
+    font-weight: 700;
     font-family: var(--fonte-secundaria);
     padding-top: 2rem;
 }

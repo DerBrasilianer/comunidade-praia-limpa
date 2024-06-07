@@ -116,6 +116,7 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
+    font-weight: 700;
     font-family: var(--fonte-secundaria);
 }
 
