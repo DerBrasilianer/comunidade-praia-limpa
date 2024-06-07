@@ -462,7 +462,7 @@ input {
 }
 
 
-@media screen and (max-width: 1040px) {
+@media screen and (min-width: 1040px) {
 
     .content {
         width: 100%;
@@ -604,8 +604,13 @@ input {
    
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     /* Estilos para iPads */
+
+    body {
+        width: 100%;
+        padding-bottom: 78%;
+    }
 
     .cabecalho {
         display: flex;
