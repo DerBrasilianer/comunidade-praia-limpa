@@ -408,12 +408,16 @@ a:hover {
         font-size: 1rem;
     }
 
+    .apresentacao__imagem {
+        width: 10rem;
+    }
+
     .titulo-destaque {
         font-size: 1.3rem;
     }
 
     .apresentacao__conteudo__texto {
-        font-size: 1rem;
+        font-size: .6rem;
     }
 
     .apresentacao__conteudo__integrante {
