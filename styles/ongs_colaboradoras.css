@@ -258,13 +258,8 @@ a:hover {
     font-weight: 400;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     /* Estilos para iPads */
-
-    body {
-        width: 100%;
-        padding-bottom: 78%;
-    }
 
     .cabecalho {
         display: flex;
@@ -337,7 +332,7 @@ a:hover {
     
     body {
         width: 100%;
-        padding-bottom: 69%;
+        padding-bottom: 80%;
     }
 
     img {
@@ -352,18 +347,6 @@ a:hover {
 
     .cabecalho__menu {
         gap: 0.55rem;
-    }
-
-    .cabecalho__menu__botao {
-        display: none;
-    }
-
-    .cabecalho__menu__imagem {
-        display: none;
-    }
-
-    .home {
-        display: block;
     }
 
     .cabecalho__menu__link {
@@ -404,8 +387,7 @@ a:hover {
     }
 
     .apresentacao__imagem {
-        width: 100%;
-        border: none;
+        width: 50%;
     }
 
     .apresentacao__corpo__texto {
