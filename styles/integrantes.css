@@ -136,6 +136,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+    padding: 1rem;
 }
 
 .apresentacao__links__subtitulo {
@@ -145,14 +146,14 @@ a:hover {
 }
 
 .apresentacao__links__navegacao {
-    border: 3px solid var(--cor-primaria);
+    border: 5px solid var(--cor-secundaria);
     width: 30%;
     text-align: center;
     border-radius: 10px;
     font-size: 1.5rem;
-    padding: 20px 27px; /* 1º valor: Vertical | 2º valor: Horizontal */
+    padding: 1.25rem 1.69rem; /* 1º valor: Vertical | 2º valor: Horizontal */
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     display: flex;
@@ -162,7 +163,13 @@ a:hover {
 }
 
 .apresentacao__links__navegacao:hover {
-    border: 3px solid var(--cor-hover-3);
+    border: 5px solid var(--cor-terciaria);
+    color: var(--cor-terciaria);
+}
+
+.instagram img{
+    height: 33px;
+    width: 32px;
 }
 
 .apresentacao__corpo {
