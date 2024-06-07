@@ -68,6 +68,11 @@ body {
     padding: 1% 0% 0% 0%;
 }
 
+.cabecalho__menu__imagem--escondido,
+.cabecalho__menu__link--escondido,
+.cabecalho__menu__link__login--escondido {
+  display: none;
+}
 .cabecalho__menu__link:hover {
     color: var(--cor-quartenaria);
 }
