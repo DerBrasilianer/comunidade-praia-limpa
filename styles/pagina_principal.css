@@ -237,14 +237,6 @@ body {
         padding-bottom: 69%;
     }
 
-    .cabecalho {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        margin: 0;
-        padding-left: 0;
-    }
-
     .cabecalho__menu {
         justify-content: center;
     }
