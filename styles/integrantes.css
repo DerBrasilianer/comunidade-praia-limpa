@@ -209,7 +209,7 @@ a:hover {
     color: var(--cor-terciaria);
 }
 
-.instagram img{
+.tamanho img{
     height: 33px;
     width: 32px;
 }
@@ -251,33 +251,144 @@ a:hover {
     font-weight: 400;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1024px) {
+    /* Estilos para iPads */
+
     .cabecalho {
-        padding: 6%;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
     }
 
     .cabecalho__menu {
-        /* Como no .cabecalho__menu já foi colocada a propriedade flexbox, não precisamos escrever novamente no @media */
         justify-content: center;
-        gap: 40px;
+    }
+
+    .cabecalho__menu__botao {
+        display: none;
+    }
+
+    .cabecalho__menu__imagem {
+        display: none;
+    }
+
+    .home {
+        display: block;
     }
 
     .cabecalho__menu__link {
-        font-size: 1.2rem;
+        font-size: 100%;
     }
 
-    body {
-        background-color: var(--cor-primaria);
-        color: var(--cor-secundaria);
+    .cabecalho__menu__link__login a{
+        margin: 0;
+        padding: 0;
     }
 
     .apresentacao {
         display: flex;
-        flex-direction: column-reverse;
-        padding: 0% 0% 5%;
     }
 
-    .apresentacao__conteudo {
-        width: auto;
+    .apresentacao__corpo {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0% 0% 5%;
+        text-align: center;
     }
+
+    .apresentacao__conteudo, .apresentacao__links__navegacao {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .apresentacao__links__navegacao {
+        height: 30%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__imagem {
+        left: 50%;
+        right: 50%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 390px) {
+    
+    body {
+        width: 100%;
+        padding-bottom: 69%;
+    }
+
+    img {
+        max-width: fit-content;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        gap: 0.55rem;
+    }
+
+    .cabecalho__menu__link {
+        font-size: .5rem;
+    }
+
+    .cabecalho__menu__link__login {
+        padding: 0;
+        font-size: .5rem;
+        border: none;
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-secundaria);
+        padding-top: 1%;
+        margin: 0;
+    }
+
+    .apresentacao__links {
+        padding-bottom: 30%;
+    }
+
+    .apresentacao__links__navegacao {
+        left: 50%;
+        right: 50%;
+        padding: 0;
+        text-align: center;
+        max-width: 50%;
+        font-size: 1rem;
+        gap: 0;
+    }
+    
+    .apresentacao__conteudo {
+        width: 80%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1rem;
+    }
+
+    .titulo-destaque {
+        font-size: 1.3rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo__integrante {
+        padding-bottom: 30%;
+        padding-top: 10%;
+    }
+
 }
