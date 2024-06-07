@@ -462,7 +462,7 @@ input {
 }
 
 
-@media screen and (min-width: 1040px) {
+@media screen and (max-width: 1040px) {
 
     .content {
         width: 100%;
