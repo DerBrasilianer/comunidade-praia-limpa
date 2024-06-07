@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <link rel="stylesheet" href="/styles/cadastro_login.css">
+    </head>
+
+
+    <body>
+
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a href="/templates/pagina_principal.html"><img class="cabecalho__menu__imagem" src="/assets/COMUNIDADE_PRAIA_LIMPA__2_-removebg-preview_2.png"></a>
+                <a class="cabecalho__menu__link" href="/templates/integrantes.html">Integrantes</a>
+                <a class="cabecalho__menu__link" href="/templates/saber_mais.html">Saber Mais</a>
+                <a class="cabecalho__menu__link" href="/templates/ongs_colaboradoras.html">ONGs Colaboradoras</a>
+                <a class="cabecalho__menu__link" href="/templates/relatar.html">Relatar</a>
+                <a class="cabecalho__menu__link__login" href="/templates/cadastro_login.html">Cadastro/Login</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="formulario">
+
+                <div class="content first-content">
+
+                    <div class="first__coluna">
+                        <h2 class="titulo titulo__primario">Bem-vindo!!</h2>
+                        <p class="descricao descricao__primario">para nos ajudar na luta contra a poluição</p>
+                        <p class="descricao descricao__primario">por favor crie uma conta</p>
+                        <button id="login" class="botao botao__primario">Login</button>
+                    </div>  
+
+                    <div class="second__coluna">
+
+                        <h2 class="titulo titulo__secundario">Criar conta</h2>
+                        <p class="descricao descricao__secundario">Por praias mais limpas</p>
+                        <form class="form">
+
+                            <label class="label-input" for="">
+                                <input type="text" placeholder="CPF">
+                            </label>
+                            
+                            <label class="label-input" for="">
+                                <input type="email" placeholder="Email">
+                            </label>
+                            
+                            <label class="label-input" for="">
+                                <input type="password" placeholder="Senha">
+                            </label>
+                            
+                            <button class="botao botao__secundario">Cadastrar</button>        
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="content second-content">
+
+                    <div class="first__coluna">
+                        <h2 class="titulo titulo__primario">Bem-vindo de volta!</h2>
+                        <p class="descricao descricao__primario">efetue seu login</p>
+                        <p class="descricao descricao__primario">para continuar nos ajudando</p>
+                        <button id="signup" class="botao botao__primario">Login</button>
+                    </div>
+
+                    <div class="second__coluna">
+
+                        <h2 class="titulo titulo__secundario">Login</h2>
+                        <p class="descricao descricao__secundario">Por praias mais limpas</p>
+                        <form class="form">
+                        
+                            <label class="label-input" for="">
+                                <input type="text" placeholder="CPF">
+                            </label>
+                        
+                            <label class="label-input" for="">
+                                <input type="password" placeholder="Senha">
+                            </label>
+                        
+                            <a class="password" href="#">Esqueceu a sua senha?</a>
+                            <button class="botao botao__secundario">Login</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p class="rodape">Desenvolvido pela AlphaSolvers</p>
+        </footer>
+
+        <script src="/scripts/cadastro_login.js"></script>
+    </body>
+
+</html>

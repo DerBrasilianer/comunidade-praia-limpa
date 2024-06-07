@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+/* Usar o Google Fonts para encontrar diferentes tipos de fontes! */
+
+:root {
+    --cor-cabecalho: #2065be;
+    --cor-primaria: #0f1216;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+    --cor-quartenaria: #0fca37;
+    --cor-hover: #212429;
+    --cor-hover-2: #d4d4d4;
+    --cor-hover-3: #0d9b2b;
+    --cor-hover-4: #184a8b;
+    
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/cadastro_login_Background.png);
+    background-position-y: top;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--cor-secundaria);
+    border-radius: 2rem;
+}
+
+.cabecalho {
+    padding: 1.5% 0% 1.5% 5%;
+    background-color: var(--cor-cabecalho);
+    background-image:url(/assets/relatar_Nav.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-bottom: solid var(--cor-quartenaria);
+    border-top: solid var(--cor-quartenaria);
+    margin-bottom: 5%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__imagem {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 5rem;
+}
+
+.cabecalho__menu__imagem:hover {
+    height: 6.125rem;
+    width: 6.125rem;
+    border: 0.2rem solid var(--cor-quartenaria);
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 1% 0% 0% 0%;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-quartenaria);
+}
+
+.cabecalho__menu__link__login {
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 2.5rem 1rem 0 1rem;
+    background-color: transparent;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 50px;
+    margin-left: 10rem;
+}
+
+.cabecalho__menu__link__login:hover {
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    background-color: var(--cor-secundaria);
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: var(--cor-cabecalho);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+
+.conte {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.titulo__primario {
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+}
+
+.titulo__secundario {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+}
+
+.descricao {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.descricao__primario {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    font-family: var(--fonte-secundaria);
+    padding-top: 1rem;
+}
+
+.descricao__secundario {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.botao {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+
+.botao__primario {
+    background-color: transparent;
+    border: 1px solid var(--cor-secundaria);
+    transition: background-color .5s;
+}
+
+.botao__primario:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-cabecalho);
+}
+
+.botao__secundario {
+    background-color: var(--cor-cabecalho);
+    border: 1px solid var(--cor-primaria);
+    transition: background-color .5s;
+}
+
+.botao__secundario:hover {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-cabecalho);
+    color: var(--cor-cabecalho);
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-content .second__coluna {
+    z-index: 11;
+}
+
+.first__coluna {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second__coluna {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: var(--cor-cabecalho);
+}
+
+.label-input {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+input {
+    color: var(--cor-secundaria);
+}
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first__coluna {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second__coluna {
+    order: 1;
+    z-index: -1;
+}
+
+.password {
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+.rodape {
+    padding: 15px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sign-in-js .first-content .first__coluna {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second__coluna {
+    z-index: 11;
+}
+
+.sign-in-js .second-content .first__coluna {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 1.3s;
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before {
+    animation: slideout 1.3s;
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first__coluna,
+.sign-up-js .second-content .second__coluna {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second__coluna {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first__coluna {
+    z-index: 13;    
+}
+
+
+.sign-in-js .first-content .second__coluna {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1.3s;
+}
+
+.sign-up-js .second-content .second__coluna {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s;
+}
+
+
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+    }
+
+    50% {
+        left: 100px;
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1040px) {
+
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .first-content, .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first__coluna, .second__coluna {
+        width: 100%;
+    }
+    
+    .sign-in-js .content::before {
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+
+    }
+
+    .form {
+        width: 90%;
+    }
+    
+
+    @keyframes deslocamentoEsq {
+
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+        }
+    
+        25% {
+            top: -80px;
+            opacity: .5;
+        }
+    
+        50% {
+            top: -100px;
+            opacity: .2;
+        }
+    
+        to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    
+    @keyframes deslocamentoDir {
+    
+        from {
+            top: 0;
+            z-index: 12;
+        }
+    
+        25% {
+            top: 80px;
+        }
+    
+        50% {
+            top: 100px;
+        }
+    
+        to {
+            top: 110px;
+            z-index: -1;
+        }
+    }
+    
+    
+    @keyframes slidein {
+    
+        from {
+            top: 0;
+            height: 40%;
+        }
+    
+        25% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        to {
+            top: 60%;
+            height: 40%;
+        }
+    }
+    
+
+    @keyframes slideout {
+    
+        from {
+            top: 60%;
+            height: 40%;
+        }
+    
+        25% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        to {
+            top: 0;
+            height: 40%;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 740px) {
+
+    .form {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .form {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
