@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-/* Usar o Google Fonts para encontrar diferentes tipos de fontes! */
+
+/* FORMATOS DE RESPONSIVIDADE ACEITOS:
+
+iPad Pro (1024 X 1366)
+iPhone 12 Pro (390 X 844)
+
+*/
 
 :root {
     --cor-cabecalho: #2065be;
