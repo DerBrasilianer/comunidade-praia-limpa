@@ -73,6 +73,7 @@ body {
 .cabecalho__menu__link__login--escondido {
   display: none;
 }
+
 .cabecalho__menu__link:hover {
     color: var(--cor-quartenaria);
 }
